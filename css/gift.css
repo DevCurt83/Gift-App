@@ -1,0 +1,260 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* CSS Normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+body {
+    background: #8eb7b7;
+    padding: 0.2cm;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.wrapper {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+}
+h1 {
+    font-family:'Lobster',cursive;
+    text-align: center;
+    width: 75%;
+}
+.gift-support {
+    margin: 10px;
+}
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#buttons_h1_wrapper {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 22px;
+}
+#homeSearch {
+    border-radius: 4px;
+    border: solid 4px #333;
+    padding: 6px;
+}
+.form-home {
+    display: flex;
+}
+#login-title {
+    display: flex;
+    margin-top: 9px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#container-one {
+    display: flex;
+    min-width: 1000px;
+}
+h3,.support_text {
+    font-family: 'Oxygen', sans-serif; 
+    color: whitesmoke;
+}
+#promo-top {
+    display: flex;
+    flex-direction: row-reverse; /* potentially row is default */
+    border-bottom: 1px solid black;
+} 
+.signIn_search {
+    height: 68%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: hsla;
+    box-shadow: 6px 6px #0d0a2654;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    font-size: small;
+    padding: 1%;
+}    
+.signIn_search:focus {
+    outline: transparent; /*check this on css tricks :focus/:focus-visible */
+}
+.fa-sign-in-alt:before, .fa-search:before {
+    font-size: 36px;
+}
+.fa-holly-berry:before {
+    content: "\f7aa";
+    font-size: 42px;
+    color: greenyellow;
+}
+.darkTheme {
+    background: midnightblue;
+    color: oldlace;
+}
+.joined-text {
+    font-family: 'Lobster', cursive; 
+    font-size: 14px;
+    text-align: center;   
+    margin: 3%;
+    width: 84%; /* may have to be changed */
+}
+.clickable-content {
+    display: flex;
+    font-weight: bolder;
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+    /* padding: 4px; */
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px #514f5187;
+    overflow: hidden;
+}
+.smoke-effect {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(3,3,3,.3);
+    border-radius: 6px;
+}
+#personalPicks {
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* justify-content: space-around; */
+    overflow-x: auto;
+    max-width: 1000px;
+    white-space: nowrap;
+    margin-left: 3px;
+    padding: 0;
+}
+.clickable-large {
+    height: 250px;
+    width: 25%;
+    background-color: orange;
+    border: solid black 2px;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px #514f5187;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.support_text {
+    white-space: pre-wrap;
+}    
+#one, #two, #three, #pic4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#one {
+    background-image: url(../images/wallE.jpg);
+}
+#two {
+    background-image: url(../images/giftPic.jpg);
+}
+#three {
+    background-image: url(../images/birthdayImg.jpg);
+}
+#pic4 {
+    background-image: url(../images/singleGiftPerson.jpg);
+}
+#pic5 {
+    background-image: url(../images/home-interior-claire-rendall-unsplash.jpg);
+}
+#pic6 {
+    background-image: url(../images/flowers-alexandra-gorn-unsplash.jpg);
+}
+/*   FONTS
+font-family: 'Lobster', cursive;
+font-family: 'Oxygen', sans-serif;
+  */
+
+
+
+  /* ---------------------------------------------------- */
+  /* -----------------signUp CSS ------------------------ */ 
+
+
+  label {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bolder;
+  }
+  .fab fa-google:before {
+    content: "\f7aa";
+    font-size: 42px;
+  }  
+  /* #formContainer {
+
+  } */
+  .socials {
+      background: white;
+  }
+  #form_screen_header {
+    font-size: larger;
+  }
+  #waterBackground {
+      /* <span>Photo by <a href="https://unsplash.com/@pete_james_photo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Peter Eisenhaure</a> on <a href="https://unsplash.com/t/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+      background: url('../images/peter-eisenhaure-x69pCfXvQXI-unsplash.jpg');
+      height: 100vh;
+      width: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-direction: column;
+  }
+  .signUp-input {
+      border: solid 2px #222;
+      margin: 3px;
+      padding: 5px;
+      border-radius: 6px;
+      align-self: center;
+      background-color:#9f9ea2d4;
+      font-size: 12px;
+      width: 171px;
+  }
+  #signUpForm {
+      background: rgba(245, 245, 245,.2);
+      padding: 9%;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      width: min-content;
+  }
+  #paswrd_instructs {
+      font-size: 9px;
+      font-family: 'Oxygen', sans-serif;
+  }
+  #submitOne  {
+      align-self: center;
+  }
+
+
+  /* -------------------------------------------------------------- */
+  /* ----------------------ACCOUNT HOME CSS ----------------------- */
+  .container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-icon {
+    display: grid;
+    place-items: center;
+    height: 55px;
+    width: 50px;
+    cursor: pointer;
+  }

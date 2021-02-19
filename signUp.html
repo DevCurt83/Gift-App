@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign up today!</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen:wght@300&display=swap" rel="stylesheet"> 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/gift.css">
+    </head>
+    <body id="waterBackground">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1 id="form_screen_header">Join thousands of thoughtful gifters</h1>
+
+        <section id="formContainer">
+            <form id="signUpForm" action="/signUp_page.php">
+                <section class='social-login'>
+                    <button class="socials">
+                        <div>
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <span>Google</span></button>
+                    <button class="socials"><i class="fab fa-google"></i></button>
+                </section>
+                <label for="fname">First name</label>
+                <input class="signUp-input" type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name</label>
+                <input class="signUp-input" type="text" id="lname" name="lname"><br><br>
+                <label for="email">Enter your email address</label>
+                <input class="signUp-input" type="email" placeholder="e.g joe@joebloggs.com"><br><br>
+                <label for="paswd">Choose a password</label><br>
+                <input class="signUp-input" type="password" id="pwd" name="pwd">
+                <label for="paswd-confirm">Confirm Password</label><br>
+                <input class='signUp-input' type="password" id="paswd-confirm" name="paswd-confirm">
+                <p id="paswrd_instructs">Password should be a minimum of 8 characters and contain letters and numbers</p>
+                <input class="signUp-input" class="submitOne" type="submit" value="Submit">
+            </form>
+        </section>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

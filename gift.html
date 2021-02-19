@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/4e5953b453.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen:wght@300&display=swap" rel="stylesheet"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Awesome Gift Ideas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/gift.css">
+    </head>
+    <body>
+        <section class="wrapper">
+            <header>
+                <section id="promo-top">
+                    <p class="joined-text">Perks are here! Three days of special deals, suprises (and maybe some prizes!!)</p>
+                    <i class="fas fa-holly-berry"></i>
+                </section>
+                <section id="login-title">
+                    <section id="buttons_h1_wrapper">
+                        <button onclick="window.location.href='signUp.html'" class="signIn_search" form="" value="unpressed" type="button">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Login/sign in
+                        </button>
+                        <h1>Awesome Gifts</h1>
+                        <button v-on:click="isHidden = !isHidden" class="signIn_search" form="" value="unpressed" type="button">
+                            <i class="fas fa-search"></i>
+                            Search
+                        </button>
+                    </section>
+                    <section id="search" v-if="!isHidden">
+                        <form class="form-home" action="https://www.google.com/search" method="get">
+                            <input placeholder="Search..." name="q"  type="search"  id="homeSearch" name="homeSearch">
+                            <button class="submit-btn" type="submit">
+                                <i class="fas fa-search" aria-hidden="true"></i> 
+                            </button>
+                        </form>    
+                    </section>
+                </section>
+            </header>
+
+            <section class="gift-support">
+                <h3>Gift Support</h3>
+                <nav>
+                    <section title="Photo by Jason Leung on unsplash.com" class="clickable-content" id="one">
+                        <div class="smoke-effect">
+                            <p class="support_text">Gift AI</p>
+                        </div>
+                    </section>
+                    <section title="Photo by Ekaterina Shevchenko on unsplash.com" class="clickable-content" id="two">
+                        <p class="support_text">Instant Gift</p>
+                    </section>
+                    <section title="Photo by Morgan Lane on unsplash.com" class="clickable-content" id="three">
+                        <p class="support_text">Birthdays</p>
+                    </section>
+                </nav>
+            </section>
+            <h3>Picked for You</h3>
+            <section id="personalPicks">  
+                <section id="container-one">  
+                <section class="clickable-large" id="pic4" title="Photo by Kira auf der Heide on unsplash.com">
+                    <h3>Picks of the Day</h3>
+                    <p class="support_text">Take a look at our top picks to help the environment</p>
+                </section>
+                <section class="clickable-large" id="pic5" title="Photo by Alexandra Gorn on unsplash.com">
+                    <h3>Plants & Flowers</h3>   
+                    <p class="support_text">Our highly sought after plants and flowers are critically acclaimed</p>
+                </section>
+                <section class="clickable-large" id="pic6" title="Photo by Claire Rendall on unsplash.com">
+                    <h3>Lorem Ipsum</h3>   
+                    <p class="support_text">Ipsum Lorem bacon ip sum lorem carrot</p>
+                </section>
+                </section>  
+            </section>
+        </section>
+        <script type="text/javascript" src="vue.js"></script>
+        <script type="text/javascript" src="js/gift.js" async defer></script>
+    </body>
+</html>
+
+<!-- https://unpkg.com/vue@next -->
