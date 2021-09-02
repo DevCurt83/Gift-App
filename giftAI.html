@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/4e5953b453.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Instant Gift Ideas</title>
+        <meta name="description" content="Gift finding assistant">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/giftAI.css"> 
+    </head>
+    <body onload="typeWriter(), roboRotate()">
+        <a href="gift.html" target="_self"><i class="fas fa-home"></i></a>
+        <div class="wrapper">
+          <i class="fas fa-robot"></i>
+          <p id="demo"></p>
+          <button id="confirm" onclick="proceedClick()">OK! Lets Proceed</button>
+          <div class="userInputWrapper">
+             <input type="text" id="userInput" placeholder="Write your answer here">
+             <button type="button" id="answerSubmit" onclick="proceedClick()">Submit Answer</button>
+          </div>
+        </div>  
+        <script src="js/giftAI.js" type="text/javascript"></script>
+    </body>
+</html>    

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/4e5953b453.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen:wght@300&display=swap" rel="stylesheet"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Instant Gift Ideas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/instant-gift.css"> 
+    </head>
+    <body>
+        <section class="wrapper">
+            <header>
+                <section id="promo-top">
+                    <p class="joined-text">Perks are here! Three days of special deals, suprises (and maybe some prizes!!)</p>
+                    <a href="gift.html"><i class="far fa-lightbulb"></i></a>
+                </section>
+                <h1>Gift Finder</h1>
+            </header>
+            <section class="inner-wrapper">
+                <h4>I would like a gift for someone aged between:</h4>
+                <select name="age-range" id="gift-finder">
+                    <option value="null">Please select age</option>
+                    <option value="1">0-6 Months</option>
+                    <option value="2">6-18 Months</option>
+                    <option value="3">18-36 Months</option>
+                    <option value="4">3-5 Years</option>
+                    <option value="5">6-8 Years</option>
+                    <option value="6">9-11 Years</option>
+                    <option value="7">Big Kids</option>
+                </select>
+                <h4>I would like to spend up to:</h4>
+                <form class="price-select-wrapper">
+                    <div class="pricing-select" aria-roledescription="£20 button">
+                        <input type="radio" name="group1" id="radio-1">
+                        <label for="radio-1"><span class="radio">£20</span></label>
+                    </div>
+                    <div class="pricing-select" aria-roledescription="£50 button">
+                        <input type="radio" name="group1" id="radio-2">
+                        <label for="radio-2"><span class="radio">£50</span></label>
+                    </div>
+                    <div class="pricing-select" aria-roledescription="£70 button">
+                        <input type="radio" name="group1" id="radio-3">
+                        <label for="radio-3"><span class="radio">£70</span></label>
+                    </div>
+                    <div class="pricing-select" aria-roledescription="£100 and greater button">
+                        <input type="radio" name="group1" id="radio-4">
+                        <label for="radio-4"><span class="radio">£100+</span></label>
+                    </div>
+                    <button type="submit" class="btn-green">Find Your Gift</button>
+                </form>
+                
+            </section>
+            <section class="mid-section">
+                <h2>Can't seem to find the perfect present?</h2>
+                <p>Leave the choice to them, or shop £10 & Below</p>
+                <section id="circle-section">
+                    <div class="mid-circle-wrap">
+                        <div class="circle-divs"><i class="fas fa-envelope-open-text"></i></div>
+                        <b><p>eGift Cards</p></b>
+                    </div>
+                    <div class="mid-circle-wrap">
+                        <div class="circle-divs"><i class="fas fa-gifts"></i></div>
+                        <b><p>Below £10 Gifts</p>
+                    </div>           
+                </section>
+            </section>
+        </section>
+        <script type="text/javascript" src="vue.js"></script>
+    </body>
+</html>

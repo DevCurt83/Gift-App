@@ -10,19 +10,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/gift.css">
     </head>
-    <body>
+    <body onload="myFunction()">
+        <div id="tester">
         <section class="wrapper">
-            <header>
+            <header id="header-home">
                 <section id="promo-top">
                     <p class="joined-text">Perks are here! Three days of special deals, suprises (and maybe some prizes!!)</p>
-                    <i class="fas fa-holly-berry"></i>
+                    <i class="fas fa-lightbulb"></i>
                 </section>
                 <section id="login-title">
                     <section id="buttons_h1_wrapper">
                         <button onclick="window.location.href='signUp.html'" class="signIn_search" form="" value="unpressed" type="button">
                             <i class="fas fa-sign-in-alt"></i>
-                            Login/sign in
+                            Login/ Register
                         </button>
+                        <!-- vue test -->
+                        <!-- <button v-else v-on:click="user"  v-bind:href="link2" class="signIn_search" form="" value="unpressed" type="button">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Login/Register
+                        </button> -->
                         <h1>Awesome Gifts</h1>
                         <button v-on:click="isHidden = !isHidden" class="signIn_search" form="" value="unpressed" type="button">
                             <i class="fas fa-search"></i>
@@ -30,51 +36,83 @@
                         </button>
                     </section>
                     <section id="search" v-if="!isHidden">
-                        <form class="form-home" action="https://www.google.com/search" method="get">
-                            <input placeholder="Search..." name="q"  type="search"  id="homeSearch" name="homeSearch">
-                            <button class="submit-btn" type="submit">
-                                <i class="fas fa-search" aria-hidden="true"></i> 
-                            </button>
-                        </form>    
-                    </section>
+                    <transition name="fade">
+                            <form class="form-home" action="https://www.google.com/search" method="get">
+                                <input placeholder="Search..." name="q"  type="search"  id="homeSearch" name="homeSearch">
+                                <button class="submit-btn" type="submit">
+                                    <i class="fas fa-search" aria-hidden="true"></i> 
+                                </button>
+                            </form>    
+                    </transition>
+                </section>
                 </section>
             </header>
 
             <section class="gift-support">
-                <h3>Gift Support</h3>
+                <h3 id="colorOne">Gift Support</h3>
                 <nav>
-                    <section title="Photo by Jason Leung on unsplash.com" class="clickable-content" id="one">
+                    <section role="button" onclick="window.location.href='giftAI.html'" title="Photo by Jason Leung on unsplash.com" class="clickable-small" id="one">
                         <div class="smoke-effect">
-                            <p class="support_text">Gift AI</p>
+                            <p class="support_text">Gift Assistant</p>
                         </div>
                     </section>
-                    <section title="Photo by Ekaterina Shevchenko on unsplash.com" class="clickable-content" id="two">
-                        <p class="support_text">Instant Gift</p>
+                    <section role="button" onclick="window.location.href='instant-gift.html'" title="Photo by Ekaterina Shevchenko on unsplash.com" class="clickable-small" id="two">
+                        <div class="smoke-effect">
+                            <p class="support_text">Instant Gift</p>
+                        </div>
                     </section>
-                    <section title="Photo by Morgan Lane on unsplash.com" class="clickable-content" id="three">
-                        <p class="support_text">Birthdays</p>
+                    <section role="button" onclick="closePopup()" title="Photo by Morgan Lane on unsplash.com" class="clickable-small" id="three">
+                        <div class="smoke-effect">
+                            <p class="support_text">Birthdays</p>
+                        </div>
                     </section>
                 </nav>
             </section>
-            <h3>Picked for You</h3>
+            <h3 id="colorTwo">Picked for You</h3>
             <section id="personalPicks">  
                 <section id="container-one">  
                 <section class="clickable-large" id="pic4" title="Photo by Kira auf der Heide on unsplash.com">
-                    <h3>Picks of the Day</h3>
-                    <p class="support_text">Take a look at our top picks to help the environment</p>
+                    <div class="smoke-effect"> <!-- smoke test-->
+                      <h3>Picks of the Day</h3>
+                      <p class="support_text">Take a look at our top picks to help the environment</p>
+                    </div>
                 </section>
                 <section class="clickable-large" id="pic5" title="Photo by Alexandra Gorn on unsplash.com">
-                    <h3>Plants & Flowers</h3>   
-                    <p class="support_text">Our highly sought after plants and flowers are critically acclaimed</p>
+                    <div class="smoke-effect">
+                      <h3>Plants & Flowers</h3>   
+                      <p class="support_text">Our highly sought after plants and flowers are critically acclaimed</p>
+                    </div>
                 </section>
                 <section class="clickable-large" id="pic6" title="Photo by Claire Rendall on unsplash.com">
-                    <h3>Lorem Ipsum</h3>   
-                    <p class="support_text">Ipsum Lorem bacon ip sum lorem carrot</p>
+                    <div class="smoke-effect">
+                      <h3>Lorem Ipsum</h3>   
+                      <p class="support_text">Ipsum Lorem bacon ip sum lorem carrot</p>
+                    </div>  
+                </section>
+                <section class="clickable-large" id="pic7" title="Photo by Taylor Kopel on unsplash.com">
+                    <div class="smoke-effect">
+                      <h3>Ipsum Lorem</h3>   
+                      <p class="support_text">orci porta non pulvinar neque laoreet suspendisse</p>
+                    </div>  
+                </section>
+                <section class="clickable-large" id="pic8" title="Photo by Junko Nakase on unsplash.com">
+                    <div class="smoke-effect">
+                      <h3>Ipsum Lorem</h3>   
+                      <p class="support_text">orci porta non pulvinar neque laoreet suspendisse</p>
+                    </div>  
                 </section>
                 </section>  
             </section>
+            <div id="notSignedInBirthday">
+                <span class="close-popup" role="button" onclick="closePopup()">&#10006</span> <!-- to be x close box-->
+                <h4>You don't appear to have signed in to your account</h4>
+                <p>Please sign in to access your upcoming birthdays :)</p>
+                <button role="button"><a href="signUp.html">Sign In or Register</a></button>
+            </div>
         </section>
-        <script type="text/javascript" src="vue.js"></script>
+    </div>
+        <script type="text/javascript" src="https://unpkg.com/vue@next"></script>
+        <!-- <script type="text/javascript" src="vue.js"></script> -->
         <script type="text/javascript" src="js/gift.js" async defer></script>
     </body>
 </html>
